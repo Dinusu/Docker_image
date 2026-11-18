@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+:root { font-family: Inter, Arial, sans-serif; color: #eaf1ff; background: #081225; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+.navbar { height: 76px; padding: 0 8%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #20304a; }
+.brand { color: white; font-size: 1.35rem; font-weight: 800; text-decoration: none; }
+.brand span, .hero h1 span { color: #39c6ff; }
+nav { display: flex; gap: 28px; }
+nav a { color: #c5d2e8; text-decoration: none; }
+nav a:hover { color: #39c6ff; }
+.hero { min-height: 570px; padding: 80px 8%; display: flex; align-items: center; justify-content: space-between; gap: 40px; background: radial-gradient(circle at 80% 45%, #123d68 0, #081225 42%); }
+.hero-content { max-width: 570px; }
+.eyebrow { color: #39c6ff; letter-spacing: 3px; font-size: .75rem; font-weight: 800; }
+h1 { font-size: clamp(3rem, 7vw, 5.6rem); line-height: 1.02; margin: 18px 0; letter-spacing: -3px; }
+.intro { color: #b5c4dc; font-size: 1.1rem; line-height: 1.8; max-width: 520px; }
+button { margin-top: 18px; padding: 14px 24px; border: 0; border-radius: 8px; background: #39c6ff; color: #061326; font-weight: 800; cursor: pointer; }
+button:hover { background: #83ddff; }
+.message { min-height: 24px; color: #83ddff; }
+.visual { width: 270px; height: 270px; margin: 30px 7%; position: relative; display: grid; place-items: center; }
+.cube { width: 150px; height: 150px; display: grid; place-items: center; border-radius: 30px; background: linear-gradient(145deg, #39c6ff, #1765c5); box-shadow: 0 20px 80px #168bd866; font-size: 5rem; font-weight: 900; color: white; transform: rotate(-8deg); }
+.orbit { position: absolute; inset: 0; border: 1px solid #39c6ff66; border-radius: 50%; }
+.orbit-two { inset: 25px -25px; transform: rotate(55deg); }
+.about { padding: 70px 8% 90px; text-align: center; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 12px 0 35px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: left; }
+.card { padding: 26px; border: 1px solid #263b59; border-radius: 14px; background: #101e34; }
+.number { color: #39c6ff; font-weight: 900; }
+.card p { color: #aebed5; line-height: 1.6; }
+footer { padding: 25px 8%; text-align: center; color: #9fb0c9; border-top: 1px solid #20304a; }
+@media (max-width: 700px) {
+  .hero { flex-direction: column; align-items: flex-start; padding-top: 65px; }
+  .visual { align-self: center; margin: 10px auto; transform: scale(.85); }
+  .cards { grid-template-columns: 1fr; }
+  .navbar { padding: 0 6%; }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Docker Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">Docker<span>Site</span></a>
+    <nav><a href="#home">Home</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A SIMPLE DEVOPS PROJECT</p>
+        <h1>Build. Ship.<br><span>Run anywhere.</span></h1>
+        <p class="intro">This website is served by Nginx inside a Docker container. One small project, a practical step into containerization.</p>
+        <button id="learnButton">Explore Docker</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <div class="cube">D</div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">THE WORKFLOW</p>
+      <h2>From source code to running container</h2>
+      <div class="cards">
+        <article class="card"><div class="number">01</div><h3>Write</h3><p>Create your HTML, CSS and JavaScript files.</p></article>
+        <article class="card"><div class="number">02</div><h3>Build</h3><p>Use the Dockerfile to build a reusable image.</p></article>
+        <article class="card"><div class="number">03</div><h3>Run</h3><p>Start a container and access the website in your browser.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>Built with HTML, CSS, JavaScript, Nginx and Docker.</footer>
+</body>
+</html>

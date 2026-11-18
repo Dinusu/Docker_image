@@ -1,0 +1,5 @@
+# Ignore local development and version-control files
+.git
+.gitignore
+README.md
+.DS_Store
